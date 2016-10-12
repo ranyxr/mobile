@@ -8,14 +8,44 @@
 <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
 <script src="./js/jquery-1.12.4.min.js"></script>
 <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<!--<script type="text/javascript">-->
+    <!--$('a').button();-->
+<!--</script>-->
 <body>
-  <div data-role='page'>
-    <div data-role="header"><h1>标题</h1></div>
+  <div data-role='page' id="page1">
+    <div data-role="header" data-position="fixed" ><h1>标题</h1></div>
     <div role="main">
-      <p>内容</p>
-    </div>
-    <div data-role="footer"><h4>底部</h4></div>
-  </div>
+      <p>内容1</p>
+      <p>内容1</p>
+        <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" data-role="button">yang</a>
+            <a href="#" data-role="button">xin</a>
+            <a href="#" data-icon="gear" data-role="button">ran</a>
 
+        </div>
+        <a href="#page2"  data-rel="dialog" data-role="button" data-transition="pop">click me </a>
+
+    </div>
+    <div data-role="content">
+        <p>content中的内容</p>
+
+    </div>
+    <div data-role="footer" data-position="fixed"><h4>底部</h4></div>
+  </div>
+  <div data-role='page' id="page2">
+    <div data-role="header" data-position="fixed"><h1>标题</h1></div>
+    <div role="main">
+      <p>内容2</p>
+      <p>内容2</p>
+      <p>内容</p>
+      <p>内容</p>
+      <p>内容</p>
+      <p>内容</p>
+        <input type="button" value="yyyyy">
+        <a href="#page1"  data-transition="flip">click me </a>
+
+    </div>
+    <div data-role="footer" data-position="fixed"><h4>底部</h4></div>
+  </div>
 </body>
 </html>
