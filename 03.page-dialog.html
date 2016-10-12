@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<body>
+  <div data-role='page' id="page1">
+    <div data-role="header" data-position="fixed"><h1>标题1</h1></div>
+    <div role="main">
+      <p>内容1</p>
+      <p>内容1</p>
+
+      <a href="#page2" data-rel="dialog">跳转到第二页面</a>
+
+    </div>
+    <div data-role="footer" data-position="fixed"><h4>底部1</h4></div>
+  </div>
+
+  <div data-role='page' id="page2">
+    <div data-role="header" data-position="fixed" ><h1>标题2</h1></div>
+    <div role="main">
+      <p>内容2</p>
+      <a href="#page1" data-transition="slide">返回到第一页面</a>
+    </div>
+    <div data-role="footer" data-position="fixed"><h4>底部2</h4></div>
+  </div>
+</body>
+</html>

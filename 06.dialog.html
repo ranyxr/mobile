@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('#dialog').dialog({corners: false, closeBtn: "right"});
+
+  $("button").on('tap', function(){
+    console.log("abcd");
+    $("#dialog").dialog('close');
+
+  })
+
+})
+
+</script>
+<body>
+  <div data-role='page' id="page">
+    <div data-role="header"><h1>标题</h1></div>
+    <div role="main">
+      <p>内容</p>
+      <a href="#dialog">单击</a>
+    </div>
+    <div data-role="footer"><h4>底部</h4></div>
+  </div>
+
+  <div data-role='page' id="dialog">
+    <div data-role="header"><h1>标题</h1></div>
+    <div role="main">
+      <p>内容</p>
+      <button type="button" name="button">Cancel</button>
+    </div>
+    <div data-role="footer"><h4>底部</h4></div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+$(function () {
+  $('ab').button({
+    inline: true,
+    theme: "b",
+  });
+  $('button').bind('tap', function(){
+    $.mobile.changePage('#page2');
+  })
+})
+
+</script>
+<body>
+  <div data-role='page'>
+    <div data-role="header"><h1>标题</h1></div>
+    <div data-role="content">
+      <p>内容</p>
+      <button type="button" name="button">按钮</button>
+      <input type="button" value="按钮">
+      <a href="#">按钮1</a>
+      <a href="#">按钮2</a>
+      <a href="#">按钮3</a>
+
+      <div id="btn">
+        <p>内容</p>
+        <button type="button" name="button">按钮</button>
+        <input type="button" value="按钮">
+      </div>
+    </div>
+    <div data-role="footer"><h4>底部</h4></div>
+  </div>
+
+  <div data-role='page' id="page2">
+    <div data-role="header"><h1>标题2</h1></div>
+    <div data-role="content">
+      <p>内容2</p>
+      <div data-role="controlgroup">
+        <a href="#" data-role="button">Yes</a>
+        <a href="#" data-role="button">No</a>
+        <a href="#" data-role="button">Maybe</a>
+      </div>
+    </div>
+    <div data-role="footer"><h4>底部2</h4></div>
+  </div>
+</body>
+</html>

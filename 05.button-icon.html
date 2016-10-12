@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+$(function () {
+  $('ab').button({
+    inline: true,
+    theme: "b",
+  });
+  $('button').bind('tap', function(){
+    $.mobile.changePage('#page2');
+  })
+})
+
+</script>
+<body>
+  <div data-role='page'>
+    <div data-role="header"><h1>标题</h1></div>
+    <div data-role="content">
+      <p>内容</p>
+      <button type="button" name="button">按钮</button>
+      <div data-role="content">
+	<div data-role="controlgroup"  data-type="horizontal">
+		<a href="index.html" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="edit" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="arrow-u" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="arrow-d" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="delete" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="plus" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="minus" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="check" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+	</div>
+	<div data-role="controlgroup"  data-type="horizontal">
+		<a href="index.html" data-role="button" data-icon="gear" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="forward" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="back" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="grid" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="star" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="alert" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="info" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+		<a href="index.html" data-role="button" data-icon="search" data-iconpos="notext" data-theme="a" data-inline="true">My button</a>
+	</div>
+</div>
+    </div>
+    <div data-role="footer"><h4>底部</h4></div>
+  </div>
+
+  <div data-role='page' id="page2">
+    <div data-role="header"><h1>标题2</h1></div>
+    <div data-role="content">
+      <p>内容2</p>
+      <div data-role="content">
+      	<a href="index.html" data-role="button" data-theme="a" data-icon="arrow-l" data-inline="true">Swatch a</a>
+      	<a href="index.html" data-role="button" data-theme="b" data-icon="arrow-l" data-inline="true">Swatch b</a>
+      	<a href="index.html" data-role="button" data-theme="c" data-icon="arrow-l" data-inline="true">Swatch c</a>
+      	<a href="index.html" data-role="button" data-theme="d" data-icon="arrow-l" data-inline="true">Swatch d</a>
+      	<a href="index.html" data-role="button" data-theme="e" data-icon="arrow-l" data-inline="true">Swatch e</a>
+      </div>
+    </div>
+    <div data-role="footer"><h4>底部2</h4></div>
+  </div>
+</body>
+</html>
